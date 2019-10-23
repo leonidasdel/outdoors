@@ -1,0 +1,14 @@
+{
+  "name": "outdoors",
+  "version": "1.0.0",
+  "description": "Outdoor project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/sassy.scss css/style.css -w"
+  },
+  "author": "Leonidas",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

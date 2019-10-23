@@ -1,0 +1,36 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 62.5%;
+
+    @include respond(tab-big) {
+        font-size: 56.25%;
+    } 
+    @include respond(tab-small) {
+        font-size: 45%;
+    }
+    @include respond(phone) {
+        font-size:35%;
+    }
+
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+}
+
+body {
+    font-family: 'Fira Sans',sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color:black;
+    padding: 3rem;
+
+    @include respond(tab-small){
+        padding: 0;
+    }
+}
+

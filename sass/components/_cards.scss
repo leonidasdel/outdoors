@@ -1,0 +1,137 @@
+.card{
+    perspective: 1000px;
+    -moz-perspective: 1000px;
+    height: 50rem;
+    position: relative;
+    @include  respond(tab-small){
+        height: 60rem;
+        width: 88%;
+        margin: 0 auto;
+    }
+    
+    
+    &-side{
+        border-radius: 0.5rem;
+        box-shadow: 0 2em 2em rgba($grey,0.15);
+        height: 50rem;
+        transition: all 1.2s ease;
+        color: $white;
+        font-size: 4rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        @include  respond(tab-small){
+            height: 60rem;
+        }
+
+        &--front{
+            background-color: #fff;
+        }
+
+        &--back{
+           transform: rotateY(180deg);
+        }
+        &-back3{
+            background: linear-gradient(to bottom right,$blue,$blue-dark);
+        }
+        &-back1{
+            background: linear-gradient(to bottom right,$honey-light,$honey);
+        }
+        &-back2{
+            background: linear-gradient(to bottom right,$green,$green-dark);
+        }
+        
+    }
+   
+    &:hover &-side--back{
+        transform: rotateY(0deg)
+    }
+    &:hover &-side--front{
+        transform: rotateY(-180deg)
+    }
+
+    &-image{
+        height: 20rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0 ,100% 0,100% 85%,0 100%) ;
+        -webkit-clip-path: polygon(0 0 ,100% 0,100% 85%,0 100%) ;
+        @include  respond(tab-small){
+            height: 30rem;
+        }
+        &-1{
+            background-image:linear-gradient(to bottom right, $honey-light,$honey) , url(../../img/v2osk-C68WT0YKGxo-unsplash.jpg);
+        }
+        &-2{
+            background-image: linear-gradient(to bottom right,$green,$green-dark ), url(../../img/adventure-boat-calm-2894335.jpg);
+        }
+        &-3{
+            background-image: linear-gradient(to bottom right,$blue,$blue-dark ), url(../../img/antarctic-coast-coast-cold-868990.jpg);
+        }
+        
+    }
+    &-heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        color: $white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        line-height: 1.5    ;
+        padding: 1rem 1.5rem;
+        width: 75%;
+        text-align: right;
+        
+        &-span{
+            padding: 1rem 1.5rem;
+            
+            box-decoration-break: clone;
+
+            &-1{
+                background-image: linear-gradient(to bottom right,  $honey-light,$honey) ;
+            }
+            &-2{
+                background-image:  linear-gradient(to bottom right,$green,$green-dark );
+            }
+            &-3{
+                background-image:linear-gradient(to bottom right,$blue,$blue-dark ) ;
+            }
+        }
+       
+        }
+
+    &-details{
+        color:darken($grey, $amount: 10);
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-top: 7rem;
+        text-align: center;
+        list-style: none;
+        width: 70%;
+        margin: 5rem auto;
+        
+        
+
+        & > ul > li{
+            &:not(:last-child){
+                border-bottom: 1px solid #eeeeee;
+            }
+            padding: 5px 0;
+        }
+    }
+    &-price{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+    }
+}
+.side-back1{
+   background: linear-gradient(to bottom right,  $honey-light,$honey)
+}
+
+//linear-gradient(to bottom right,rgba($green-light, 0.8),rgba($green-dark, 0.8))

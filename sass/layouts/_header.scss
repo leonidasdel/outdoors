@@ -1,0 +1,85 @@
+
+.header{
+    height: 95vh;
+    background-image:linear-gradient(to bottom right,rgba($green-light, 0.8),rgba($green-dark, 0.8)),url(../img/beach-cliff-clouds-1168742.jpg);
+    background-size: cover;
+    z-index: 150;
+    background-position: left;
+    clip-path: polygon(0 0,100% 0,100% 75%,0 100%);
+    @include respond(tab-small){
+        -webkit-clip-path:polygon(0 0,100% 0,100% 86.5vh,0 100%);
+        clip-path: polygon(0 0,100% 0,100% 86.5vh,0 100%);
+        
+      }
+    position: relative;
+    text-align: center;
+
+        &__text-box {position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%
+        };
+        
+
+       
+        
+
+}
+
+.heading-primary{
+    color:$white;
+
+         &--main{
+           display: block;
+        font-size: 4.5rem;
+        font-weight: 400;
+        animation-name: fromleft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include  respond(phone){
+            font-size: 4.5rem;
+            line-height: 6rem;
+        }
+
+    }
+        &--sub{
+        display: block;
+        font-size:2.2rem;
+        font-weight: 700;
+        letter-spacing: 0.86rem;
+        animation-name: fromright;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        margin-bottom: 7.5rem;
+        @include  respond(phone){
+            letter-spacing: 0.3rem;
+            font-size:2.2rem;
+            margin-top: 2.6rem;
+            
+        }
+    }
+
+    @include  respond(phone){
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.logo1{font-size: 4.5rem;color:$black;position: absolute;
+top: 3.2rem;left: 2.5rem}
+
+
+
+
+.fas:hover, .fa-dove:hover{transform: rotate(35deg)}

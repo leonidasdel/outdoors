@@ -1,0 +1,229 @@
+.main{padding: 25em 0;
+margin-top: -23.75vh;
+background-color: #f7f7f7;
+clip-path: polygon(0 23.75vh , 100% 0, 100% 80%, 0 100%);
+@include  respond(tab-small){
+ padding: 29em 0;;
+}}
+
+
+.heading-secondary{
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(to left,$green,$green-light);
+    background-clip:text;
+    -webkit-background-clip:text;
+    font-size: 2.7em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: all 0.35s;
+     &:hover{
+        transform: skewX(10deg) skewY(2deg) scale(1.05);
+        cursor: default;
+     }
+
+     @include  respond(tab-small){
+        font-size: 2.3em;
+        line-height: 6rem;
+    }
+    @include  respond(phone){
+        font-size: 2.2em;
+        line-height: 6rem;
+    }
+
+}
+
+.margin-bottom-8{
+    margin-bottom: 1.8em !important;
+}
+
+.margin-bottom-5{
+    margin-bottom: 0.3em;
+}
+
+.heading-inner-row{
+    font-size: 2.4em;
+    color:darken($color: gray, $amount: 8);
+    letter-spacing: 0.1em;
+}
+
+.paragraph-inner-row{
+    font-size: 1.6em;
+    color: darken($color:gray, $amount: 4);
+    @include  respond(tab-small){
+        font-size: 2em;
+        
+    }
+}
+
+
+.photos-on-top{
+  position: relative;
+
+  &:hover &-inner:not(:hover){
+      transform: scale(0.8);
+
+  }
+    &-inner{
+        width: 60%;
+       position: absolute;
+       @include respond(tab-small) {
+           float: left;
+
+           position: relative;
+           width: 33.33333%;
+       }
+    }
+
+      &-1{top: -2em;
+       left:0%;
+       transition-duration: 0.3s;
+       @include respond(tab-small) {
+        top: 0;
+        transform: scale(1.2);
+    }
+        &:hover{transform: scale(1.2);z-index: 300}
+    }
+           
+        
+      &-2{
+          top:2em;left: 27em;
+          transition-duration: 0.3s;
+          @include respond(tab-small) {
+            top: -1rem;
+            left: 0;
+            transform: scale(1.4);
+            z-index: 100;
+        }
+          &:hover{transform: scale(1.2);z-index: 300}
+      } 
+      &-3{
+          top: 12em;left:10em;
+          transition-duration: 0.3s;
+          @include respond(tab-small) {
+            top: 1rem;
+            left: 0;
+            transform: scale(1.2);
+        }
+          &:hover{transform: scale(1.2);z-index: 300}
+      }
+}
+
+
+//features//
+
+.section-features{
+    padding: 20em 0;
+    background-image: linear-gradient(to bottom right,rgba($green-light, 0.8),rgba($green-dark, 0.8)),url(../../img/clouds-conifer-daylight-371589.jpg);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -15em;
+    @include  respond(tab-small){
+        padding: 12em 0;
+    }
+    
+    & > * {
+        transform: skewY(7deg);
+    }
+  
+    
+}
+.features-box{
+background-color: rgba($white, 0.8);
+font-size: 1.0em;
+padding: 2.5em;
+text-align: center;
+border-radius: 5px;
+box-shadow: 0 1.5em 4em rgba($black, 0.15);
+transition-duration: 0.2s;
+@include  respond(tab-small){
+    padding: 2em;
+    width: 75%;
+    margin: 0 auto;
+}
+    &-icon{
+        font-size: 6em;
+        margin-bottom: 0em;
+        background: linear-gradient(to right,$green-light,$green);
+        display: inline-block;
+        
+        background-clip: text;
+        -webkit-background-clip:text;
+        color: transparent;
+    
+    }
+    &-paragraph{
+        font-size: 1.4em;
+        color: darken($color:gray, $amount: 6);
+    }
+    &:hover{
+        transform: translateY(-1.3em) scale(1.03);
+        box-shadow: 0 0.8em 4em rgba($black, 0.9);
+        cursor: pointer;
+    }
+    
+}
+
+
+
+.heading-inner-row-small{
+    font-size: 1.6em;
+    font-weight: 700;
+    color:darken($color: gray, $amount: 8);
+    
+}
+
+
+//section-tours//
+
+.section-tours{
+    padding: 25em 0 5em 0;
+    background-color: #f7f7f7;
+    margin-top: -10em;
+    @include  respond(tab-small){
+        padding: 15em 0 2em 0;
+    }
+}
+
+.section-stories{
+    padding: 15rem 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.733) 0%, rgba(255,255,255,0.733) 50%) ,url(../../img/avenue-2215317_1920.jpg);
+    background-size: cover;
+    @include  respond(tab-small){
+        padding: 5rem 0;
+    }
+}
+
+.max-width{
+    max-width: 85rem !important;
+    @include  respond(phone){
+        max-width: 60rem !important;
+    }
+}
+
+.beautiful-people{
+    @include respond(tab-big){
+        max-width:89rem !important;
+    }
+    @include respond(tab-small){
+        max-width:81rem !important;
+    }
+    @include  respond(phone){
+        max-width: 115rem !important;
+        
+    }
+}
+
+.book{
+    
+    @include  respond(phone){
+        height: 55rem !important;
+        
+    }
+}
+.book-form{
+    @include  respond(phone){
+        padding: 3rem !important;
+        
+    }
+}
