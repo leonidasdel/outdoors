@@ -354,7 +354,7 @@ body {
 
 .section-features {
   padding: 20em 0;
-  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/clouds-conifer-daylight-371589.jpg);
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/clouds-conifer-daylight-371589.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -15em; }
@@ -408,7 +408,7 @@ body {
 
 .section-stories {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.733) 0%, rgba(255, 255, 255, 0.733) 50%), url(../../img/avenue-2215317_1920.jpg);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.733) 0%, rgba(255, 255, 255, 0.733) 50%), url(../img/avenue-2215317_1920.jpg);
   background-size: cover; }
   @media (max-width: 56.25em) {
     .section-stories {
@@ -549,11 +549,11 @@ body {
       .card-image {
         height: 30rem; } }
     .card-image-1 {
-      background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url(../../img/v2osk-C68WT0YKGxo-unsplash.jpg); }
+      background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url(../img/v2osk-C68WT0YKGxo-unsplash.jpg); }
     .card-image-2 {
-      background-image: linear-gradient(to bottom right, #55c57a, #28b485), url(../../img/adventure-boat-calm-2894335.jpg); }
+      background-image: linear-gradient(to bottom right, #55c57a, #28b485), url(../img/adventure-boat-calm-2894335.jpg); }
     .card-image-3 {
-      background-image: linear-gradient(to bottom right, #2998ff, #5643fa), url(../../img/antarctic-coast-coast-cold-868990.jpg); }
+      background-image: linear-gradient(to bottom right, #2998ff, #5643fa), url(../img/antarctic-coast-coast-cold-868990.jpg); }
   .card-heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -788,7 +788,7 @@ body {
   background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/adventure-boat-calm-2894335.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/adventure-boat-calm-2894335.jpg);
   background-size: cover;
   border-radius: 3px;
   height: 50rem;
